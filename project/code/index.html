@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sarah Jaysmith</title>
+        <meta charset="UTF-8">
+
+        <!-- css links -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles-pop-up.css">
+
+        <!-- favicon links -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+        <!-- font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <noscript>
+                <div class="warning">Sorry, you must enable Javascript in order for this page to
+                work correctly. Please see the <a href="https://www.enable-javascript.com/">Enable Javascript website for more information.</a>
+                </div>
+            </noscript>
+
+            <header>
+                <h2 id="userName">[User name]</h2>
+                <h3 id="assignment">[assignment]</h3>
+            </header>
+
+            <main>
+                <h2 id="gameHeader">Hangman</h2>
+                <div class="flex-container">
+                    <div class="flex-item">
+
+                        <article>
+                            <div class="flex-item-content" id="hangmanImageDiv">
+                                <img id="hangmanImage" src="hangman-images/0.jpg" alt="Hangman" />
+                            </div>
+                        </article>
+                       
+                    </div>
+
+                    <div class="flex-item">
+
+                        <article>
+                            <div class="flex-item-content" id="hangmanGuessSoFar">
+                                <p>Guess so far will go here.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="flex-item-content" id="hangmanHint">
+                                <p>Hint: a hint will appear here.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="flex-item-content" id="hangmanStatus">
+                                <p>Incorrect guesses: 0 of 7</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="flex-item-content" id="hangmanLetters">
+                                <p>Alphabet goes here.
+                            </div>
+                        </article>
+                        <article>
+                            <div class="flex-item-content" id="instructionsDiv">
+                                <p>Type or click a letter to guess whether it appears in the word. <br />You have six guesses!</p>
+
+                            </div>
+                        </article>
+                        <article>
+                            <div class="flex-item-content" id="startButtonDiv">
+                                <p><button id="playAgain">Play Again</button></p>
+
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+            </main> 
+            <footer>
+                <div class="flex-item">
+                    <p>&copy; Sarah Jaysmith, 2022</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <!-- script links -->
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/hangman.js"></script>
+    <script src="scripts/project.js"></script>
+    
+    <!-- words list adapted from https://futureofworking.com/40-hardest-words-to-guess-in-hangman -->
+</html>
